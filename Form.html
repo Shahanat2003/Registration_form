@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <link rel="Stylesheet" href="Form.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="subcontainer">
+      <h1>Register</h1>
+      <form class="form" >
+        <div class="name"  >
+        <label for="first">Name<span>*</span></label><br/>
+        <div class="name-field">
+          <div>
+          <input type="text"  id="first" >
+          <p>first</p>
+        </div>
+        <div>
+          <input type="text"  id="last">
+          <p>last</p>
+        </div>
+        </div>
+        <p class="error" id="name-error"></p>
+      </div>
+
+      <div class="fields">
+        <label for="username">Username<span>*</span></label><br/>
+          <input type="text"  id="username">
+        <p class="error" id="username-error"></p>
+      </div>
+
+
+      <div class="fields">
+        <label for="email">Email<span>*</span></label><br/>
+          <input type="email"  id="email">
+        <p class="error" id="email-error"></p>
+      </div>
+
+
+      <div class="fields">
+        <label for="phone">Phone<span>*</span></label> <br/>
+          <input type="number"  id="phone">  
+        <p class="error" id="phone-error"></p>
+      </div>
+
+
+      <div class="fields">
+        <label for="password">Passsword<span>*</span></label><br/>
+          <input type="password"  id="password"> 
+        <p class="error" id="password-error"></p>
+      </div>
+
+
+      <div class="fields">
+        <label for="bio">Short Bio</label><br/>
+        <textarea rows="4" id="bio"></textarea>
+        <p>Share a little information about yourself.</p>
+      </div>
+
+      <button type="submit" id="submit">Submit</button>
+
+      </form>
+
+
+      <div class="popup">
+        <div class="popup-box">
+        <div class="popup-content">
+          <h1>Submited Data</h1>
+          <div id="data"></div>
+          <button class="close">close</button>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+    <script src="Form.js"></script>
+  </body>
+</html>
